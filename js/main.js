@@ -92,7 +92,10 @@ function create() {
 
   // Create the player's walking animations from the texture atlas. These are stored in the global
   // animation manager so any sprite can access them.
+  console.log(this)
   const anims = this.anims;
+  console.log(this.anims)
+  console.log(anims)
   anims.create({
     key: "misa-left-walk",
     frames: anims.generateFrameNames("atlas", { prefix: "misa-left-walk.", start: 0, end: 3, zeroPad: 3 }),
